@@ -1,0 +1,25 @@
+.home-container{
+  background:url(../../img/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .eagr-header-title{
+    color: #f50057;
+  }
+}
+
+@media screen and(max-width: 430px){
+  .home-container{
+    .eapps-widget-toolbar{
+      width: 1%;
+      .eapps-widget-toolbar-panel-share {
+        width: 1%;
+        .eapps-widget-toolbar-panel-share-block {
+          width: 1%;
+        }
+        .eapps-widget-toolbar-panel-share-button {
+          width: 1%;
+        }
+      }
+    }
+  }
+}

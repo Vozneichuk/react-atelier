@@ -1,0 +1,191 @@
+footer{
+  background:url('../../img/footer.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position:center;
+  .footer-container{
+    color: white;
+    h2{
+      margin: 1em 0;
+      font-size: 35px;
+    }
+    .info{
+      background-image: linear-gradient(#E30556, #E30556),
+                        linear-gradient(#E30556, #E30556),
+                        linear-gradient(#E30556, #E30556),
+                        linear-gradient(#E30556, #E30556);
+      background-repeat: no-repeat;
+      background-size: 4px 15%, 15% 4px, 4px 15%, 15% 4px, calc(100% - 8px) calc(100% - 8px);
+      background-position: left bottom, left bottom, right top, right top, right bottom, right bottom, left top, left top, 4px 4px;
+      margin: 0 0 20px 0;
+      padding: 40px 0 30px 30px;
+      p, span, svg {
+        color: white;
+        font-size:20px;
+        font-weight: bold;
+      }
+      h3{
+        font-size: 25px;
+      }
+      hr{
+        border: 1px solid #E30556;
+        width: 70px;
+        margin: 0 0 1.5rem 0;
+      }
+      .footer-svg {
+        padding: 0.5em;
+        width: 8vw;
+        height: 14vh;
+        border-radius: 50%;
+        border:3px solid #E30556; 
+      }
+      .contacts{
+        .number{
+          span{
+            font-size: 22px;
+          }
+          svg{
+            margin: 0 0.3em 0 0;
+          }
+        }
+        .mail{
+          font-size: 17px;
+          margin: 0 0 0 0.3em;
+        }
+      }
+      .address{
+        line-height: 3;
+        h3{
+          margin: 0.15em 0;
+        }
+        hr{
+          margin: 0 0 0.5em 0;
+        }
+        p{
+          font-size: 15px;
+        }
+      } 
+      .schedule , .about {
+        p{
+          margin: 0 0 0.2em 0;
+        }
+      }
+      .about{
+        a{
+          text-decoration: none;
+          &:hover{
+            text-decoration: none;
+          }
+          &.active{
+            user-select: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1024px){
+  footer{
+    .footer-container{
+      .info{
+        margin: 10px 0 30px 0;
+        .footer-svg {
+        width: 10vw;
+        height:16vh;
+        }
+        .contacts{
+          .mail{
+            font-size: 13px;
+          }
+        }
+        .address{
+          hr{
+            margin: 1.1rem 1rem 1rem 1rem;
+          }
+          p{
+            font-size:14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px){
+  footer{
+    .footer-container{
+      .info{
+        h3{
+          font-size: 35px;
+        }
+        .schedule , .about{
+          margin: 1.5em 0 0 0;
+          p{
+            padding: 0.3em 0 0 0;
+          }
+        }
+        .footer-svg{
+          width: 14vw;
+          height: 18vh;
+        }
+        .contacts{
+          .number{
+            span{
+              font-size: 24px;
+            }
+          }
+          .mail{
+            font-size: 18px;
+          }
+        }
+        .address{
+          p{
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px){
+  footer{
+    .footer-container{
+      .info{
+        margin: 0 0 20px 0;
+        padding: 0 0 20px 0;
+        .contacts, .schedule, .address, .about{
+          margin: 2em 0 0 0;
+        }
+        .footer-svg {
+          width:25vw;
+          height:18vh;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 325px){
+  footer{
+    .footer-container{
+      h2{
+        margin: 1em 0 0.5em 0;
+        font-size: 30px;
+      }
+      .info{
+        .footer-svg {
+          width:30vw;
+          height:16vh;
+        }
+        .contacts{
+          .mail{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
