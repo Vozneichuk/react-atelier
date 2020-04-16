@@ -7,10 +7,10 @@ import EventNoteIcon from '@material-ui/icons/EventNote';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import {NavLink} from 'react-router-dom';
 import { Link, animateScroll as scroll } from 'react-scroll'
+import {handleLocation, location} from '../../utils';
 import './footer.scss'; 
 
-export const Footer = (props) => {
-  const {handleLocation, location} = props
+export const Footer = () => {
 
   const scrollToTop = () => {
     scroll.scrollToTop()

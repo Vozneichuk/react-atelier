@@ -2,10 +2,12 @@ import React from 'react'
 import logo from '../../img/logo.png'
 import {Grid, Button, Container} from '@material-ui/core';
 import {Link} from 'react-router-dom';
+import {handleLocation, resetLocation, location} from '../../utils';
+
 import './nav-bar.scss';
 
-export const NavBar = (props) => {
-  const {location, resetLocation, handleLocation } = props
+export const NavBar = () => {
+
   return (
       <nav>
         <Container>
