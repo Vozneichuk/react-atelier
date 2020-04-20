@@ -28,9 +28,9 @@ export const PhoneAndMail = () => {
           096 71 72 372
         </Typography>
       </Grid>
-      <Grid container alignItems='center' justify='center'>
+      <Grid container alignItems='center' justify='center' className='mail'>
         <MailOutlineIcon color='primary'/>
-        <Typography className='mail' variant="h6" color="secondary" component="span">
+        <Typography variant="h6" color="secondary" component="span">
           atelier.marina.online@gmail.com
         </Typography>
       </Grid>
@@ -47,7 +47,7 @@ export const LocatedInfo = () => {
       alignItems='center' 
       className='located-info'
     >
-      <Grid container item alignItems='center' justify='center' display='flex' direction='column'>
+      <Grid container item alignItems='center' justify='center' display='flex' direction='column' className='contact-info'>
         <Where/>
       </Grid>
         <PhoneAndMail/>

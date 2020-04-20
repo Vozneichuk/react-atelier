@@ -38,7 +38,7 @@ export const Header = () => {
   
   return(
     <Grid container item xs={12} display='flex' justify='space-between'>
-      <Grid container item xs={12} sm={3}>
+      <Grid container item xs={12} sm={4}>
         <h1 className='offer'>Наши услуги</h1>
         <Grid container display='flex' direction='column' alignItems='flex-start' className='offer-list'>
           {offerList}

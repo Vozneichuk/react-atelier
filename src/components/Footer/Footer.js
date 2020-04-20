@@ -5,24 +5,12 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
-import {NavLink} from 'react-router-dom';
-import { Link, animateScroll as scroll } from 'react-scroll'
-import {handleLocation, location} from '../../utils';
+import { Link } from 'react-scroll'
+import {BtnFind} from '../BtnFind/BtnFind';
 import './footer.scss'; 
 
 export const Footer = () => {
-
-  const scrollToTop = () => {
-    scroll.scrollToTop()
-    if(location === '/contact'){
-      return null
-    }
-    else{
-      handleLocation()
-    }
-  }
-  
-  return (
+   return (
     <footer>
       <Container className='footer-container'>
         <Grid container item display='flex' direction='column' xs={12}>
@@ -38,9 +26,13 @@ export const Footer = () => {
               alignItems='center' 
               direction='column' 
               className='contacts'>
-              <PermContactCalendarIcon className='footer-svg'/>
-              <h3>Контакты</h3>
-              <hr/>
+						<div className='footer-svg'>
+							<PermContactCalendarIcon />
+						</div>
+						<div className='footer-title'>
+							<h3>Контакты</h3>
+							<hr/>
+						</div>
               <PhoneAndMail />
             </Grid>
             <Grid container item sm={6} xs={12} md={3} 
@@ -49,9 +41,13 @@ export const Footer = () => {
               alignItems='center' 
               direction='column' 
               className='address'>
-              <LocationOnIcon className='footer-svg'/>
-              <h3>Адресс</h3>
-              <hr/>
+					  <div className='footer-svg'>
+					  		<LocationOnIcon />
+					  </div>
+					  <div className='footer-title'>
+						<h3>Адресс</h3>
+						<hr/>
+					  </div>
               <Where/>
             </Grid>
             <Grid container item sm={6} xs={12} md={3} 
@@ -60,9 +56,13 @@ export const Footer = () => {
               alignItems='center' 
               direction='column' 
               className='schedule'>
-              <EventNoteIcon className='footer-svg'/>
-              <h3>График</h3>
-              <hr/>
+					  <div className='footer-svg'>
+					  		<EventNoteIcon />
+					  </div>
+					  <div className='footer-title'>
+							<h3>График</h3>
+              			<hr/>
+					  </div>
               <p>Пн-Пт: с 11:00-20:00</p>
               <p>Сб-Вс: с 12:00-19:00</p>
             </Grid>
@@ -72,9 +72,13 @@ export const Footer = () => {
               alignItems='center' 
               direction='column' 
               className='about'>
-              <HelpOutlineIcon className='footer-svg'/>
-              <h3>О нас</h3>
-              <hr/>
+					  <div className='footer-svg'>
+					  	<HelpOutlineIcon />
+					  </div>
+					  <div className='footer-title'>
+						<h3>О нас</h3>
+              		<hr/>
+					  </div>
               <Link
                 to="review"
                 spy={true}
@@ -84,9 +88,7 @@ export const Footer = () => {
               >
                 <p>Отзывы</p>
               </Link>
-              <NavLink to='/contact' onClick={scrollToTop}>
-                <p>Как нас найти</p>
-              </NavLink>
+				  	<BtnFind/>
             </Grid>
           </Grid>
         </Grid>

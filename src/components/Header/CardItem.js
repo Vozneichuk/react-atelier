@@ -7,7 +7,7 @@ export default function CardItem({item, item: {text_list}}) {
     <Card className='card-container'>
       <CardActionArea>
         <CardMedia
-          className='img'
+          className='image'
           image={item.img}
           title={item.title}
         />
