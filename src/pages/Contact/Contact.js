@@ -9,7 +9,7 @@ export default class Contact extends Component {
     return (
       <div className='contact-container'>
         <Container>
-          <Grid container item xs={12} display='flex' justify='space-between' alignItems='flex-start'>
+          <Grid container item xs={12} display='flex' justify='space-between' alignItems='flex-start' className='area'>
             <MainLocatedInfo/>
             <LocatedMap/>
           </Grid>
